@@ -1,0 +1,121 @@
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title></title>
+            <style media="screen">
+            * {
+                  box-sizing: border-box;
+            }
+            .topnav {
+                  background-color: grey;
+                  overflow: hidden;
+                  position: absoulte;
+            }
+
+            .topnav a {
+                  float: left;
+                  color: #f2f2f2;
+                  padding: 14px 16px;
+                  text-decoration: none;
+                  font-size: 17px;
+            }
+
+            .banner {
+                  height: 100vh;
+                  background-color: #ADD8E6;
+                  margin-top: 20px;
+                  color: white;
+                  text-align: center;
+                  line-height: 100vh;
+            }
+
+            .Section-1 {
+                  text-align: center;
+            }
+            .circle {
+                  height: 300px;
+                  width: 280px;
+                  background-color: #daa521;
+                  border-radius: 50%;
+                  display:inline-block;
+                  margin-right: 10px;
+            }
+
+            .rectangle {
+                  height: 300px;
+                  width: 280px;
+                  background-color: red;
+                  display: inline-block;
+                  margin-right: 10px;
+                  margin-left: 15px;
+            }
+
+            .column {
+                  float: left;
+                  width: 50%;
+                  padding: 5px;
+                  height: 300px; /* Should be removed. Only for demonstration */
+            }
+
+            /* Clear floats after the columns */
+            .section-2:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+            }
+            .rec {
+                  background-color: #d3691f;
+                  margin-top: 1px;
+                  text-align: center;
+                  padding-top: 45px;
+                  padding-bottom: 34px;
+                  color: white;
+            }
+            .footer {
+                  background-color: #dca0db;
+                  overflow: hidden;
+                  position: absoulte;
+                  padding-left: 20px;
+                  padding-bottom: 20px;
+            }
+            </style>
+      </head>
+      <body>
+            <div class="topnav">
+                  <h2 href="#" style="text-align: center; color: white;">Header</h2>
+            </div>
+            <div class="banner">
+                  <h2 href="#">Banner</h2>
+            </div>
+            <div class="Section-1">
+                  <h3>Section-1</h3>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+            </div>
+            <h2 style="text-align: center">Section-2</h2>
+            <div class="section-2">
+                  <div class="column" style="background-color:#aaa;">
+                        <h2 style="text-align: center; line-height: 300px;">Main Content</h2>
+                  </div>
+                  <div class="column">
+                        <div class="rec">Article-1</div>
+                        <div class="rec">Article-2</div>
+                        <div class="rec">Article-3</div>
+                  </div>
+            </div>
+            <h2 style="text-align: center">Section-3</h2>
+            <div class="Section-2">
+                  <span class="rectangle"></span>
+                  <span class="rectangle"></span>
+                  <span class="rectangle"></span>
+                  <span class="rectangle"></span>
+            </div>
+            <h2 style="text-align: center;">Section-4</h2>
+            <div class="footer">
+                  <h2 href="#" style="text-align: center; color: white;">Footer</h2>
+            </div>
+      </body>
+      </html>

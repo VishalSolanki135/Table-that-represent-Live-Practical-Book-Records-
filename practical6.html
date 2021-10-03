@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+            * {
+                  box-sizing: border-box;
+            }
+
+            body {
+                  font-family: Arial, Helvetica, sans-serif;
+            }
+            img {
+                  border-radius: 10px;
+            }
+            .column {
+                  float: left;
+                  width: 25%;
+                  padding: 0 10px;
+            }
+
+            .row {margin: 0 -5px;}
+
+            .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+            }
+            @media screen and (max-width: 600px) {
+                  .column {
+                        width: 100%;
+                        display: block;
+                        margin-bottom: 20px;
+                  }
+            }
+            .card {
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                  padding: 16px;
+                  text-align: center;
+                  background-color: #f1f1f1;
+            }
+
+            p {
+                  text-align: justify;
+            }
+            .button {
+                  background-color: red;
+                  color: white;
+                  padding-right: 40px;
+                  padding-left: 40px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  border-radius: 15px;
+                  border: none;
+            }
+            .button:hover {
+                  background-color: blue;
+            }
+      </style>
+</head>
+<body style="background-color: #d3d3d3">
+
+      <h2 style="color: white">PRACTICAL-6: CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES</h2>
+
+
+      <div class="row">
+            <div class="column">
+                  <div class="card">
+                        <img src="html2.png" alt="" style="width: 100%">
+                        <h3>Introduction To HTML</h3>
+                        <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                        <button type="button" name="button" class="button" onclick="window.location.href = 'https://www.beta-labs.in/2020/06/introduction-to-html.html';">Read More</button>
+                  </div>
+            </div>
+
+            <div class="column">
+                  <div class="card">
+                        <img src="css2.jpg" alt="" style="width: 100%">
+                        <h3>Introduction To HTML</h3>
+                        <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                        <button type="button" name="button" class="button" onclick="window.location.href = 'https://www.beta-labs.in/2020/08/css-animation.html';">Read More</button>
+                  </div>
+            </div>
+
+            <div class="column">
+                  <div class="card">
+                        <img src="jquery.png" alt="" style="width: 100%">
+                        <h3>Introduction To HTML</h3>
+                        <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                        <button type="button" name="button" class="button" onclick="window.location.href = 'https://jquery.com/';">Read More</button>
+                  </div>
+            </div>
+
+            <div class="column">
+                  <div class="card" style="padding-bottom: 20px">
+                        <img src="boo.png" alt="" style="width: 100%">
+                        <h3>Introduction To HTML</h3>
+                        <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>
+                        <button type="button" name="button" class="button" style="margin-top:30px" onclick="window.location.href = 'https://www.beta-labs.in/2020/11/introduction-to-bootstrapp.html';">Read More</button>
+                  </div>
+            </div>
+      </div>
+
+</body>
+</html>
